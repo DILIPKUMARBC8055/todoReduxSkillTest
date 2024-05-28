@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(2px, 2px, 2px, 0.1);
+    padding: 20px;
+
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+input[type="checkbox"] {
+    margin-right: 20px;
+    border: 4px solid black;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    width: 60px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+#todoInput {
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-bottom: 2px solid black;
+    width: 300px;
+}
+
+#inputbox {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#detailsdiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#atagsDiv {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#atagsDiv a {
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+}
+
+#atagsDiv a:hover {
+    background-color: #ccc;
+}
+.button-align{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* styles.css */
+
+.update-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 8px 12px;/* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the container fit the content */
+    width: 60px;
+    margin: 2px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition-duration: 0.4s; /* 0.4 second transition effect to hover state */
+  }
+  
+  .update-btn:hover {
+    background-color: white; /* White background on hover */
+    color: #4CAF50; /* Green text on hover */
+    border: 2px solid #4CAF50; /* Green border */
+  }
+  
+  .update-btn:active {
+    background-color: #45a049; /* Darker green on click */
+    box-shadow: 0 5px #666; /* Add a shadow */
+    transform: translateY(4px); /* Move it down a bit */
+  }
+  
